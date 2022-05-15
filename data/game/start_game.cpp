@@ -5,26 +5,26 @@
 
 using namespace std;
 
-void exit(); // exits the program
+void back(); // exits the program
 
-int main(){
-    system("cls");
+int main()
+{
     int choice;
 
     cout << endl
          << endl;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
-    cout << "1) Start Game" << endl;
+    cout << "1) Easy" << endl;
 
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
-    cout << "2) Show Rules" << endl;
-
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
-    cout << "3) Credits" << endl;
-    cout << endl;
+    cout << "2) Medium" << endl;
 
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
-    cout << "4) Exit";
+    cout << "3) Hard" << endl;
+    cout << endl;
+
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+    cout << "4) Back";
     cout << endl
          << endl;
 
@@ -36,31 +36,30 @@ int main(){
     {
     case 1:
         system("cls");
-        system("data\\game\\start_game.exe");
+        system("data\\game\\files\\easy\\easy.exe");
         break;
 
     case 2:
-        /* code */
+        system("cls");
+        system("data\\game\\files\\medium\\medium.exe");
         break;
 
     case 3:
-        /* code */
+        system("cls");
+        system("data\\game\\files\\hard\\hard.exe");
         break;
 
     case 4:
-        exit();
+        back();
         break;
 
     default:
         break;
     }
-    return 0;
 }
 
-void exit()
+void back()
 {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 5);
-    cout << endl
-         << "Bye :)" << endl;
-    sleep(2);
+    system("cls");
+    system("main.exe");
 }

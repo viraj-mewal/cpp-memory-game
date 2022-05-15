@@ -1,0 +1,4 @@
+I have done till attempts incremention and winning etc.
+
+Now, I have to implement life system - life increases when gets
+an heart. and by default - 3 lives
