@@ -1,2 +1,5 @@
 .vscode
-test.*
+test.cpp
+test.exe
+to-do.txt
+test.txt
