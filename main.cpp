@@ -36,15 +36,17 @@ int main(){
     {
     case 1:
         system("cls");
-        system("data\\game\\start_game.exe");
+        system("data\\game\\game.exe");
         break;
 
     case 2:
-        /* code */
+        system("cls");
+        system("data\\rules\\rules.exe");
         break;
 
     case 3:
-        /* code */
+        system("cls");
+        system("data\\credits\\credits.exe");   
         break;
 
     case 4:

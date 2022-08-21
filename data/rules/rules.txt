@@ -1,0 +1,19 @@
+Rules for the game :-
+
+-> Press from 1 - 20 no. to choose between the boxes.
+-> 0 for viewing answers (NOTE :- only when you have hearts)
+
+Hearts :-
+
+-> Easy Mode :- 3 hearts
+-> Medium Mode :- 2 hearts
+-> Hard Mode :- 1 heart
+
+View Ans :-
+
+-> Easy Mode :- Press any key to continue
+-> Medium Mode :- after 10 seconds
+-> Hard Mode :- after 5 seconds
+
+Special Rule for (Hard Mode) :- boxes will reshuffle after 
+every 5 wrong attempts.

@@ -84,10 +84,33 @@ int main()
         cout << endl;
 
         // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
-        cout << "Enter your choice (1 - 20) (0 - heart) :- ";
+        cout << "Enter your choice (1 - 20) (0 - heart) (any key - exit) :- ";
         try
         {
             cin >> choice;
+
+            // check if any other character is typed
+
+            if (cin.fail())
+            {
+                char isExit;
+                cin.clear();
+                cin.ignore();
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+                cout << "Do yo really want to exit (y/n) :- ";
+                cin >> isExit;
+                if (isExit == 'y')
+                {
+                    system("cls");
+                    system("main.exe");
+                }
+                else
+                {
+                    continue;
+                }
+                sleep(2);
+                continue;
+            }
 
             if (choice == 0)
             {
